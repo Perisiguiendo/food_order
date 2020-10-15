@@ -2,7 +2,7 @@
   <div class="food-item">
     <b-card :img-src="foodData.avatar" img-alt="Card image" img-left class="mb-3">
       <b-card-body class="b-card-left" title="Horizontal Card">
-        <b-card-text class="b-text-font">
+        <b-card-text class="food-desc">
           主要原料：牛肉
         </b-card-text>
         <div class="b-text-font">
@@ -45,9 +45,14 @@ export default {
 <style scoped>
 .food-item {
   margin: 10px;
-  width: 270px;
+  width: 20rem;
+  height: 5rem;
 }
+
 .b-text-font {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
   font-size: .5rem;
   padding: .25rem;
 }

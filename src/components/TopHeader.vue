@@ -2,7 +2,15 @@
   <div>
     <img :src="merchant.avatar" class="bg-blur" alt="image">
     <div class="merchant">
-      dffd
+      <div class="up">
+        <div class="up-left">
+          <h3>川崎牛排饭（白塔店）</h3>
+          <h6>xxxxxxxxxxxxxxxxxxxxx</h6>
+        </div>
+        <div class="up-right">
+          <img class="logo" src="../assets/img/4.jpg" alt="">
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -27,16 +35,30 @@ export default {
   height: 9rem;
   top: 0;
   left: 0;
-  filter: blur(5px);
+  filter: blur(.4rem);
   z-index: -1;
 }
 .merchant {
-  width: 100%;
+  width: 90%;
+  margin: 2rem auto 0 auto;
   height: 8rem;
-  background: #ddd;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px #dddddd;
+}
+
+.up {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 40px;
+}
+
+.up-left {
+  height: 5rem;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
 }
 </style>

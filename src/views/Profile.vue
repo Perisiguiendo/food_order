@@ -1,7 +1,11 @@
 <template>
-  <div>
-    <btm-navbar></btm-navbar>
-  </div>
+  <b-container>
+    <b-row>
+      <b-col>
+        <btm-navbar></btm-navbar>
+      </b-col>
+    </b-row>
+  </b-container>
 
 </template>
 

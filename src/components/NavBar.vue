@@ -1,7 +1,7 @@
 <template>
   <div>
-    <b-nav vertical class="w-25 nav-bar">
-      <b-nav-item active>肉类</b-nav-item>
+    <b-nav vertical justified class="nav-bar">
+      <b-nav-item active>膳食</b-nav-item>
       <b-nav-item>肉类</b-nav-item>
       <b-nav-item>肉类</b-nav-item>
       <b-nav-item>肉类</b-nav-item>
@@ -40,14 +40,12 @@ export default {
 <style scoped>
 .nav-bar {
   box-shadow: 2px 2px 5px #eee;
-  width: 10rem;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   color: #666;
   font-size: 1rem;
   background: #f1f1f1;
+  padding: 1rem 0;
 }
-.nav-bar-item {
-  padding: 10px 5px;
-}
+
 </style>

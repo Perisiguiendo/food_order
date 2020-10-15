@@ -1,16 +1,16 @@
 <template>
-  <div>
+  <div class="home-body">
     <b-container class="bv-example-row">
       <b-row class="header">
         <b-col>
           <top-header></top-header>
         </b-col>
       </b-row>
-      <b-row cols="2">
-        <b-col>
+      <b-row>
+        <b-col cols="2">
           <navbar></navbar>
         </b-col>
-        <b-col>
+        <b-col cols="10">
           <food-list></food-list>
         </b-col>
       </b-row>
@@ -45,4 +45,7 @@ export default {
 .header {
   margin-bottom: 1rem;
 }
+.home-body::-webkit-scrollbar { width: 0 !important; overflow-y: hidden }
+.home-body { -ms-overflow-style: none; }
+.home-body { overflow: -moz-scrollbars-none; }
 </style>

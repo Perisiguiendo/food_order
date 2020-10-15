@@ -1,80 +1,39 @@
 <template>
-  <div>
-<!--    <div v-for="item in food_list">-->
-<!--      <food :sfoodInfo="item"></food>-->
+  <div class="food-list">
+    <orderfood></orderfood>
+
+    <orderfood></orderfood>
+    <orderfood></orderfood>
+    <orderfood></orderfood>
+    <orderfood></orderfood>
+    <orderfood></orderfood>
+<!--    <orderfood></orderfood>-->
+<!--    <orderfood></orderfood>-->
+    <!--    <div v-for="item in food_list">-->
+<!--      <Food :sfoodInfo="item"></Food>-->
 <!--    </div>-->
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
-    <div class="hii">hhhhhhhhh</div>
+
 
   </div>
 </template>
 
 <script>
 import food from '@/components/Food'
+import orderfood from '@/components/OrderFood'
 export default {
   name: "FoodList",
-  data() {
-    return {
-      food_list: []
-    }
-  },
-  mounted() {
-    this.showFoodInfo();
-  },
-  methods: {
-    showFoodInfo() {
+  // data() {
+  //   return {
+  //     food_list: []
+  //   }
+  // },
+  // mounted() {
+  //   this.showFoodInfo();
+  // },
+  // methods: {
+  //   showFoodInfo() {
       // const obj = this;
-      // const url = "/order/api/food";
+      // const url = "/order/api/Food";
       // this.$axios.get(url, {
       //   params: {
       //     page: 1
@@ -85,26 +44,35 @@ export default {
       //       console.log(obj.food_list)
       //     }
       // )
-    },
-  },
+    // },
+  // },
   components: {
-    food
+    food,
+    orderfood
   }
 }
 </script>
 
 <style scoped>
-.movies {
-  margin-top: 20px;
-  float: left;
+.food-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /*align-items: center;*/
+  /*justify-content: space-around;*/
 }
-.card_x {
-  float: left;
-  margin: 10px;
-}
-.hii {
-  height: 20px;
-  background: #2a63ff;
-  width: 100px;
-}
+/*.movies {*/
+/*  margin-top: 20px;*/
+/*  float: left;*/
+/*}*/
+/*.card_x {*/
+/*  float: left;*/
+/*  margin: 10px;*/
+/*}*/
+/*.hii {*/
+/*  height: 20px;*/
+/*  background: #2a63ff;*/
+/*  width: 100px;*/
+/*}*/
 </style>
